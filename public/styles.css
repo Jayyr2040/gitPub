@@ -1,7 +1,10 @@
 body {
     /* color: blanchedalmond; */
-    color: #f5da42 ;
+    color:  blue ;
     background-color: steelblue;
+    background-image: url('./drinkback.png');
+    background-size: cover;
+    font-size: 20px;
     }
 
 h1 {
@@ -11,12 +14,12 @@ h1 {
 a {
     margin-left: 10px;
     font-style: italic;
-    color: blanchedalmond
+    color: red
 }
 
 .showbody {
     /* color: blanchedalmond; */
-    color: #f5da42 ;
+    color: blue ;
     background-color: steelblue;
     text-align: center;
     }
@@ -29,7 +32,7 @@ a {
 }
 
 .showimg {
-    width: 50%;
+    width: 30%;
     aspect-ratio: 1/1
     
 }
