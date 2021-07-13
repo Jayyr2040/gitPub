@@ -11,7 +11,9 @@ app.get("/drinks", (req, res) => {
 
 app.get("/drinks/:id", (req, res) => {
     const pos = req.params.id;
-    res.send(pos);
+   // res.send(pos);
+   const drink = drinks[pos];
+    res.render("show.ejs",{drink})
     });
 
 app.listen(PORT, () => {
