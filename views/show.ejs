@@ -7,17 +7,34 @@
     <title>Document</title>
     <style type="text/css">
         body {
-            color: blanchedalmond;
+            /* color: blanchedalmond; */
+            color: #f5da42 ;
             background-color: steelblue;
+            text-align: center;
             }
+
+        a {
+            margin-left: 10px;
+            font-style: italic;
+            color: blanchedalmond
+           
+        }
+
+        img {
+            width: 50%;
+            aspect-ratio: 1/1
+            
+        }
     </style>
 </head>
 <body>
     <h1>At foo bar</h1>
     <h2>Name: <%= drink.name%></h2>
+    <h3>Price: $<%= drink.price%></h3>
+    <a href='http://localhost:3000/drinks'>Return to Menu</a>
+    <br>
     <img src='<%= drink.image.replace("jpg","png")%>'>
     <!-- <img src='<%= drink.image%>'> -->
-    <h3>Price: $<%= drink.price%></h3>
-    <a style='color:black' href='http://localhost:3000/drinks'>Return to Menu</a>
+  
 </body>
 </html>
