@@ -15,10 +15,13 @@
 <body>
     <h1>Welcome to gitPub</h1>
     <ul>
-        <% for (const drink of drinks) 
+        <% for (const [index,drink] of drinks.entries()) 
             {%>
                 <li>
+                    
                     <%= drink.name[0].toUpperCase() + drink.name.slice(1)  %>
+                    <a href='http://localhost:3000/drinks/<%= index%>'>Details</a>
+             
                 </li>
             <%} 
         %>
