@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+ <!--    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
+    <title>Document</title> -->
+    <%- include('./partials/head'); %>
+    <%- include('./partials/indexstyle'); %>
+    <!-- <style type="text/css">
         body {
             /* color: blanchedalmond; */
             color: #f5da42 ;
@@ -20,21 +22,35 @@
             margin-left: 10px;
             font-style: italic;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
+    <h3>Drinks</h3>
     <ul>
         <% for (const [index,drink] of drinks.entries()) 
             {%>
                 <li>
                     
                     <%= drink.name[0].toUpperCase() + drink.name.slice(1)  %>
-                    <a href='http://localhost:3000/drinks/<%= index%>'>Details</a>
+                    <a class="glyphicon glyphicon-glass" aria-hidden="true" href='http://localhost:3000/drinks/<%= index%>'></a>
              
                 </li>
             <%} 
         %>
    </ul>
+   <h3>Food</h3>
+   <ul>
+       <% for (const [index,fod] of food.entries()) 
+           {%>
+               <li>
+                   <%= fod.name %>
+                   <a class="glyphicon glyphicon-thumbs-up" aria-hidden="true" href='http://localhost:3000/drinks/<%= index + drinks.length%>'></a>
+            
+               </li>
+           <%} 
+       %>
+  </ul>
+
 </body>
 </html>
