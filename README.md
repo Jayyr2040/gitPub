@@ -1,6 +1,6 @@
 ![](/ga_cog.png) 
 
-# Git Pub
+# git Pub
 
 ![](https://imgur.com/MfZn3wW.png)
 
