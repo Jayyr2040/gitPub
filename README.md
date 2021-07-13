@@ -43,7 +43,7 @@ Make a pub app that displays data inside server-side rendered views.
   - `npm init`
     - follow the `npm init` prompts 
     - _thought question:_ does npm init create a file? if it does, where does it create it and what is the name of the file?
-  - `atom .` 
+  - `code .` 
   
 **Make sure you did it right**: 
 
@@ -63,7 +63,7 @@ Make a pub app that displays data inside server-side rendered views.
 Remember, make sure you're in the same directory for the app you want to install the packages for! 
 
 - `npm i express ejs`
-- <details><summary>check your package.json in atom to make sure they installed</summary><p>
+- <details><summary>check your package.json in vscode to make sure they installed</summary><p>
   
     ![](https://i.imgur.com/Kcz3uq5.png)
     
