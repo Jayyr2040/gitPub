@@ -14,6 +14,14 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
-    
+    <ul>
+        <% for (const drink of drinks) 
+            {%>
+                <li>
+                    <%= drink.name[0].toUpperCase() + drink.name.slice(1)  %>
+                </li>
+            <%} 
+        %>
+   </ul>
 </body>
 </html>
