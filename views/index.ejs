@@ -1,28 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!--    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> -->
     <%- include('./partials/head'); %>
-    <%- include('./partials/indexstyle'); %>
-    <!-- <style type="text/css">
-        body {
-            /* color: blanchedalmond; */
-            color: #f5da42 ;
-            background-color: steelblue;
-            }
 
-        h1 {
-            text-align: center;
-        }
-
-        a {
-            margin-left: 10px;
-            font-style: italic;
-        }
-    </style> -->
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
@@ -33,7 +13,7 @@
                 <li>
                     
                     <%= drink.name[0].toUpperCase() + drink.name.slice(1)  %>
-                    <a class="glyphicon glyphicon-glass" aria-hidden="true" href='http://localhost:3000/drinks/<%= index%>'></a>
+                    <a class="glyphicon glyphicon-glass" aria-hidden="true" href='/drinks/<%= index%>'></a>
              
                 </li>
             <%} 

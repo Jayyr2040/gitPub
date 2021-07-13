@@ -5,6 +5,7 @@ const PORT = process.env.PORT;
 const drinks = require("./models/drinks");
 const food = require("./models/food");
 
+app.use(express.static('public'));
 
 app.get("/drinks", (req, res) => {
   // res.send(drinks)

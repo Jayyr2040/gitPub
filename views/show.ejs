@@ -1,50 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <!--  <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> -->
     <%- include('./partials/head'); %>
-    <%- include('./partials/showstyle'); %>
-   <!--  <style type="text/css">
-        body {
-            /* color: blanchedalmond; */
-            color: #f5da42 ;
-            background-color: steelblue;
-            text-align: center;
-            }
-
-        a {
-            margin-left: 10px;
-            font-style: italic;
-            color: blanchedalmond
-           
-        }
-
-        img {
-            width: 50%;
-            aspect-ratio: 1/1
-            
-        }
-    </style> -->
 </head>
-<body>
+<body class="showbody">
     <h1>At foo bar</h1>
 
     <% if (pos < drinkLength) { %>
             <h2>Name: <%= drinks[pos].name%></h2>
             <h3>Price: $<%= drinks[pos].price%></h3>
-            <a href='http://localhost:3000/drinks'>Return to Menu</a>
+            <a class="showa" href='/drinks'>Return to Menu</a>
             <br>
-            <img src='<%= drinks[pos].image.replace("jpg","png")%>'>
+            <img class="showimg" src='<%= drinks[pos].image.replace("jpg","png")%>'>
         <%} else 
         {%>
             <h2>Name: <%= food[pos - drinkLength].name%></h2>
             <h3>Price: $<%= food[pos - drinkLength].price%></h3>
-            <a href='http://localhost:3000/drinks'>Return to Menu</a>
+            <a class="showa" href='/drinks'>Return to Menu</a>
             <br>
-            <img src='<%= food[pos - drinkLength].image.replace("jpg","png")%>'>
+            <img class="showimg" src='<%= food[pos - drinkLength].image.replace("jpg","png")%>'>
         <%}
     %>
 </body>
