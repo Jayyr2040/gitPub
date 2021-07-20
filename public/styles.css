@@ -3,7 +3,7 @@ body {
     color:  blue ;
     background-color: steelblue;
     background-image: url('./drinkback.png');
-    background-size: cover;
+    background-size: contain;
     font-size: 20px;
     }
 
